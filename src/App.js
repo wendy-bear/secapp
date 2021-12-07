@@ -9,7 +9,7 @@ export const data = {
   datasets: [
     {
       label: '# of Votes',
-      data: [2, 12, 3, 5, 2, 3],
+      data: [5, 14, 8, 5, 11, 3],
       backgroundColor: [
         'rgba(0, 255, 0, 0.5)', //lime
         'rgba(0, 250, 154, 0.5)',
@@ -32,7 +32,14 @@ export const data = {
 };
 
 export function App() {
-  return <Pie data={data} />;
+
+  return (
+    <div className="parent">
+    <h1>Pie Chart</h1>
+      <Pie data={data} />
+  </div>
+  
+  );  
 }
 
 export default App;
